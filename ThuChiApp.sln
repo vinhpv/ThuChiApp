@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuChiApp", "ThuChiApp\ThuChiApp.csproj", "{05DDBDA3-685C-422B-9BA5-3BAFFA87246C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuChiApp.Tests", "ThuChiApp.Tests\ThuChiApp.Tests.csproj", "{EABE0C15-3754-4307-AF93-B0A9C1D1EB56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuChi.Model", "ThuChi.Model\ThuChi.Model.csproj", "{91EFFA44-3081-4F97-AFBA-8639DCA22020}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05DDBDA3-685C-422B-9BA5-3BAFFA87246C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DDBDA3-685C-422B-9BA5-3BAFFA87246C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DDBDA3-685C-422B-9BA5-3BAFFA87246C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DDBDA3-685C-422B-9BA5-3BAFFA87246C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EABE0C15-3754-4307-AF93-B0A9C1D1EB56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABE0C15-3754-4307-AF93-B0A9C1D1EB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABE0C15-3754-4307-AF93-B0A9C1D1EB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABE0C15-3754-4307-AF93-B0A9C1D1EB56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91EFFA44-3081-4F97-AFBA-8639DCA22020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EFFA44-3081-4F97-AFBA-8639DCA22020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EFFA44-3081-4F97-AFBA-8639DCA22020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EFFA44-3081-4F97-AFBA-8639DCA22020}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
