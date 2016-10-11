@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ThuChi.Model
 {
-    public class LyDo
+    public class Lydo
     {
         public int LydoId { get; set; }
-        public string Lydo { get; set; }
+        public string lydo { get; set; }
         public string Ghichu { get; set; }
     }
 
@@ -23,7 +23,7 @@ namespace ThuChi.Model
     public class Thuchi
     {
         public int thuchi_id { get; set; }
-        public Nguoithuchi NguoiThuChi { get; set; }
+        public int nguoithuchi_id { get; set; }
         public DateTime? ngaythuchi { get; set; }
         public bool? kieuthu { get; set; }
         public double? tien { get; set; }
@@ -35,7 +35,5 @@ namespace ThuChi.Model
     {
         public int thuchi_id { get; set; }
         public int lydo_id { get; set; }
-        public Thuchi ThuChi { get; set; }
-        public LyDo LyDo { get; set; }
     }
 }
