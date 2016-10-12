@@ -25,6 +25,8 @@ namespace ThuChi.API.Models
         public string firstName { get; set; }
 
         public virtual List<todoItem> todoItems { get; set; }
+
+        public virtual List<Thuchi> Thuchis { get; set; }
     }
 
     public class todoItem
