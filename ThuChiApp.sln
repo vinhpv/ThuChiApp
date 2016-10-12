@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuChiApp", "ThuChiApp\ThuC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuChiApp.Tests", "ThuChiApp.Tests\ThuChiApp.Tests.csproj", "{EABE0C15-3754-4307-AF93-B0A9C1D1EB56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuChi.Model", "ThuChi.Model\ThuChi.Model.csproj", "{91EFFA44-3081-4F97-AFBA-8639DCA22020}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuChi.API", "ThuChi.API\ThuChi.API.csproj", "{0AB0A3F4-F35F-4F99-8F53-E1DDD4A2227F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{EABE0C15-3754-4307-AF93-B0A9C1D1EB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EABE0C15-3754-4307-AF93-B0A9C1D1EB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EABE0C15-3754-4307-AF93-B0A9C1D1EB56}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91EFFA44-3081-4F97-AFBA-8639DCA22020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91EFFA44-3081-4F97-AFBA-8639DCA22020}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91EFFA44-3081-4F97-AFBA-8639DCA22020}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91EFFA44-3081-4F97-AFBA-8639DCA22020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB0A3F4-F35F-4F99-8F53-E1DDD4A2227F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB0A3F4-F35F-4F99-8F53-E1DDD4A2227F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB0A3F4-F35F-4F99-8F53-E1DDD4A2227F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB0A3F4-F35F-4F99-8F53-E1DDD4A2227F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
