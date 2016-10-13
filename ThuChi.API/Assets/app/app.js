@@ -60,7 +60,7 @@ app.config(['$provide', '$routeProvider', '$httpProvider', function ($provide, $
         controller: 'todoManagerCtrl'
     });
     
-    $routeProvider.when('/Nguoithuchis', {
+    $routeProvider.when('/nguoithuchis', {
         templateUrl: 'App/Nguoithuchis',
         controller: 'nguoithuchisCtrl'
     });
@@ -74,10 +74,10 @@ app.config(['$provide', '$routeProvider', '$httpProvider', function ($provide, $
         templateUrl: 'App/Thuchis',
         controller: 'thuchisCtrl'
     });
-    */
+    
     $routeProvider.otherwise({
         redirectTo: '/home'
-    });    
+    });  */
 }]);
 
 app.run(['$http', '$cookies', '$cookieStore', function ($http, $cookies, $cookieStore) {

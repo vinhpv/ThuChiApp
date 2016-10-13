@@ -9,7 +9,7 @@
         }
 
         $scope.getOne = function (id) {
-            $http.get('/api/nguoithuchis/GetNguoithuchis/'+id)
+            $http.get('/api/nguoithuchis/GetNguoithuchis/' + id)
                 .success(function (data, status, headers, config) {
                     $scope.Nguoithuchi = data;
                 });
@@ -40,7 +40,7 @@
                 };
 
             if ($scope.hovaten != '') {
-                $http.put('/api/nguoithuchis/PutNguoithuchi/' + $scope.Nguoithuchis[index].id, item)
+                $http.put('/api/nguoithuchis/PutNguoithuchi/' + $scope.Nguoithuchis[index].nguoithuchi_id, item)
                     .success(function (data, status, headers, config) {
                         $scope.getAll();
                     });
@@ -48,7 +48,7 @@
         }
 
         $scope.DeleteNguoithuchi = function (index) {
-                $http.delete('/api/nguoithuchis/' + $scope.Nguoithuchis[index].id, item)
+            $http.delete('/api/nguoithuchis/' + $scope.Nguoithuchis[index].nguoithuchi_id)
                     .success(function (data, status, headers, config) {
                         $scope.getAll();
                     });

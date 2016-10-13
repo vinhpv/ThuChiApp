@@ -14,6 +14,7 @@ using ThuChi.API.Models;
 
 namespace ThuChi.API.Controllers
 {
+    [Authorize]
     public class NguoithuchisController : AuthController
     {
 
