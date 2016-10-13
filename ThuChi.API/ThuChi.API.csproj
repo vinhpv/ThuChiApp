@@ -178,6 +178,7 @@
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\NguoithuchisController.cs" />
     <Compile Include="Controllers\ThuchisController.cs" />
+    <Compile Include="Controllers\Utility\AuthController.cs" />
     <Compile Include="Controllers\WS_AccountController.cs" />
     <Compile Include="Controllers\WS_TodoController.cs" />
     <Compile Include="Global.asax.cs">
@@ -1047,15 +1048,6 @@
     <Content Include="Views\App\TodoManager.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\App\Nguoithuchis.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\App\Thuchis.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\App\Lydoes.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Scripts\version.json" />
   </ItemGroup>
   <ItemGroup>
@@ -1126,6 +1118,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\ng\version.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\App\Nguoithuchis.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\App\Lydoes.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\App\Thuchis.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

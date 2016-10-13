@@ -29,5 +29,23 @@ namespace ThuChi.API.Controllers
         {
             return PartialView();
         }
+
+        [Authorize]
+        public ActionResult Nguoithuchis()
+        {
+            return PartialView();
+        }
+
+        [Authorize]
+        public ActionResult Lydoes()
+        {
+            return PartialView();
+        }
+
+        [Authorize]
+        public ActionResult Thuchis()
+        {
+            return PartialView();
+        }
     }
 }

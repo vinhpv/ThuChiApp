@@ -4,11 +4,11 @@
     'home',
     'signIn',
     'register',
-    'todoManager'
-    //,
-    //'nguoithuchis',
-    //'lydoes',
-    //'thuChis'
+    'todoManager',
+    'nguoithuchis'
+    /*,
+    'lydoes',
+    'thuChis' */
 ]);
 
 
@@ -60,21 +60,21 @@ app.config(['$provide', '$routeProvider', '$httpProvider', function ($provide, $
         controller: 'todoManagerCtrl'
     });
     
-    //$routeProvider.when('/Nguoithuchis', {
-    //    templateUrl: 'App/Nguoithuchis',
-    //    controller: 'nguoithuchisCtrl'
-    //});
+    $routeProvider.when('/Nguoithuchis', {
+        templateUrl: 'App/Nguoithuchis',
+        controller: 'nguoithuchisCtrl'
+    });
+    /*
+    $routeProvider.when('/Lydoes', {
+        templateUrl: 'App/lydoes',
+        controller: 'lydoesCtrl'
+    });
 
-    //$routeProvider.when('/Lydoes', {
-    //    templateUrl: 'App/lydoes',
-    //    controller: 'lydoesCtrl'
-    //});
-
-    //$routeProvider.when('/Thuchis', {
-    //    templateUrl: 'App/Thuchis',
-    //    controller: 'thuchisCtrl'
-    //});
-
+    $routeProvider.when('/Thuchis', {
+        templateUrl: 'App/Thuchis',
+        controller: 'thuchisCtrl'
+    });
+    */
     $routeProvider.otherwise({
         redirectTo: '/home'
     });    

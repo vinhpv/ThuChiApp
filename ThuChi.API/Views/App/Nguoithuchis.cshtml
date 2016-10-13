@@ -1,8 +1,60 @@
-﻿<h2>
-    My Task Manager</>
+﻿
+<h3>Người thi chi</h3>
 
-    <div class="row margin-top-5">
+<p>
+    Người thu chi
+</p>
+
+    <div class="row">
         <div class="col-md-12">
-
+            <form role="form">
+                <div class="form-group">
+                    <label for="txthovaten">
+                        Họ và tên
+                    </label>
+                    <input type="text" class="form-control" id="txthovaten" ng-model="hovaten" />
+                </div>
+                <div class="form-group">
+                    <label for="txtghichu">
+                        Ghi chú
+                    </label>
+                    <input type="text" class="form-control" id="txtghichu"  ng-model="ghichu"/>
+                </div>
+                <button type="submit" class="btn btn-default" ng-click="InsertNguoithuchi()">
+                    Insert
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-condensed table-hover table-bordered table-responsive">
+                <thead>
+                    <tr>
+                        <th>
+                            #ID
+                        </th>
+                        <th>
+                            Họ và tên
+                        </th>
+                        <th>
+                            Ghi chú
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in Nguoithuchis">
+                        <td>
+                            {{item.nguoithuchi_id}}
+                        </td>
+                        <td>
+                            {{item.hovaten}}
+                        </td>
+                        <td>
+                            {{item.ghichu}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>

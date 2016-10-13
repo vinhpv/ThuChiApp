@@ -9,13 +9,14 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
+using ThuChi.API.Controllers.Utility;
 using ThuChi.API.Models;
 
 namespace ThuChi.API.Controllers
 {
-    public class NguoithuchisController : ApiController
+    [Authorize]
+    public class NguoithuchisController : AuthController
     {
-        private DBContext db = new DBContext();
 
         // GET: api/Nguoithuchis
         public IQueryable<Nguoithuchi> GetNguoithuchis()
