@@ -136,9 +136,10 @@ app.run(['$rootScope', '$http', '$cookies', '$cookieStore', function ($rootScope
                         }
                         else
                             $rootScope.loggedIn = false;
+                    })
+                    .error(function (data, status, headers, config) {
+                        console.log("Lỗi: " + data);
                     });
-
-
             })
             .error(function (data, status, headers, config) {
                 $rootScope.loggedIn = false;
