@@ -48,7 +48,7 @@
         }
 
         $scope.DeleteNguoithuchi = function (index) {
-            $http.delete('/api/nguoithuchis/' + $scope.Nguoithuchis[index].nguoithuchi_id)
+            $http.delete('/api/nguoithuchis/DeleteNguoithuchi/' + $scope.Nguoithuchis[index].nguoithuchi_id)
                     .success(function (data, status, headers, config) {
                         $scope.getAll();
                     });

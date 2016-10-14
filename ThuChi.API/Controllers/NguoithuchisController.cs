@@ -39,6 +39,7 @@ namespace ThuChi.API.Controllers
 
         // PUT: api/Nguoithuchis/5
         [ResponseType(typeof(void))]
+        [HttpPut]
         public async Task<IHttpActionResult> PutNguoithuchi(int id, Nguoithuchi nguoithuchi)
         {
             if (!ModelState.IsValid)
@@ -74,6 +75,7 @@ namespace ThuChi.API.Controllers
 
         // POST: api/Nguoithuchis
         [ResponseType(typeof(Nguoithuchi))]
+        [HttpPost]
         public async Task<IHttpActionResult> PostNguoithuchi(Nguoithuchi nguoithuchi)
         {
             if (!ModelState.IsValid)
@@ -89,6 +91,8 @@ namespace ThuChi.API.Controllers
 
         // DELETE: api/Nguoithuchis/5
         [ResponseType(typeof(Nguoithuchi))]
+        [HttpDelete]
+        //[Route("DeleteNguoithuchi/{id}")]
         public async Task<IHttpActionResult> DeleteNguoithuchi(int id)
         {
             Nguoithuchi nguoithuchi = await db.Nguoithuchis.FindAsync(id);
