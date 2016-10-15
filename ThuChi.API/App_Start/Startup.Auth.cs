@@ -9,6 +9,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using ThuChi.API.Providers;
 using ThuChi.API.Models;
+using System.Web.Http;
 
 namespace ThuChi.API
 {
@@ -45,6 +46,10 @@ namespace ThuChi.API
 
             // Enable the application to use bearer tokens to authenticate users
             app.UseOAuthBearerTokens(OAuthOptions);
+            HttpConfiguration config = new HttpConfiguration();
+            WebApiConfig.Register(config);
+            app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
+            app.UseWebApi(config);
         }
     }
 }
