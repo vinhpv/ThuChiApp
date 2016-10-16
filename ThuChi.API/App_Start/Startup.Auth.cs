@@ -46,10 +46,10 @@ namespace ThuChi.API
 
             // Enable the application to use bearer tokens to authenticate users
             app.UseOAuthBearerTokens(OAuthOptions);
-            HttpConfiguration config = new HttpConfiguration();
-            WebApiConfig.Register(config);
-            app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
-            app.UseWebApi(config);
+            //HttpConfiguration config = new HttpConfiguration();
+            //WebApiConfig.Register(config);
+            //app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
+            //app.UseWebApi(config);
         }
     }
 }
